@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+import React from 'react';
+import Pizza from './components/Pizza';
 import './App.css';
+import pineapplePizza from './pineapple-pizza.jpg'; // 导入图片
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Pizza Menu</h1>
+      <Pizza 名称="Pineapple Pizza" 单价={12.99} 图片路径={pineapplePizza} />
     </div>
   );
 }
