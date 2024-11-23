@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Wang-pizza/static/css/main.1b131218.css",
+    "main.js": "/Wang-pizza/static/js/main.671a45a2.js",
+    "static/js/453.0a36081d.chunk.js": "/Wang-pizza/static/js/453.0a36081d.chunk.js",
+    "static/media/pineapple-pizza.jpg": "/Wang-pizza/static/media/pineapple-pizza.aa4536368788d0f2cab1.jpg",
+    "index.html": "/Wang-pizza/index.html",
+    "main.1b131218.css.map": "/Wang-pizza/static/css/main.1b131218.css.map",
+    "main.671a45a2.js.map": "/Wang-pizza/static/js/main.671a45a2.js.map",
+    "453.0a36081d.chunk.js.map": "/Wang-pizza/static/js/453.0a36081d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b131218.css",
+    "static/js/main.671a45a2.js"
+  ]
+}
