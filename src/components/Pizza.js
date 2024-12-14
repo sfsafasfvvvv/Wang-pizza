@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import './Pizza.css'; // Import styles
 
 // Pizza component
@@ -36,3 +37,4 @@ const Pizza = ({ name, price, imagePath }) => {
 };
 
 export default Pizza;
+
