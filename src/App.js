@@ -1,7 +1,7 @@
 import React from 'react';
 import Pizza from './components/Pizza';
 import './App.css';
-import pineapplePizza from './pineapple-pizza.jpg'; // Import image
+import pineapplePizza from './pineapple-pizza.jpg';
 
 function App() {
   return (
