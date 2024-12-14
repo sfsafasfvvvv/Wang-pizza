@@ -1,35 +1,35 @@
 import React, { useState } from 'react';
-import './Pizza.css'; // 引入样式文件
+import './Pizza.css'; // Import styles
 
-// 披萨组件
-const Pizza = ({ 名称, 单价, 图片路径 }) => {
-  const [数量, 设置数量] = useState(1);
-  const [总价, 设置总价] = useState(单价);
+// Pizza component
+const Pizza = ({ name, price, imagePath }) => {
+  const [quantity, setQuantity] = useState(1);
+  const [totalPrice, setTotalPrice] = useState(price);
 
-  // 增加数量
-  const 增加数量 = () => {
-    设置数量(数量 + 1);
-    设置总价(总价 + 单价);
+  // Increase quantity
+  const increaseQuantity = () => {
+    setQuantity(quantity + 1);
+    setTotalPrice(totalPrice + price);
   };
 
-  // 减少数量
-  const 减少数量 = () => {
-    if (数量 > 1) {
-      设置数量(数量 - 1);
-      设置总价(总价 - 单价);
+  // Decrease quantity
+  const decreaseQuantity = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+      setTotalPrice(totalPrice - price);
     }
   };
 
   return (
     <div className="pizza-item">
-      <img src={图片路径} alt={名称} className="pizza-image" />
-      <h2>{名称}</h2>
-      <p>Base Cost: ${单价}</p>
-      <p>Total Cost: ${总价.toFixed(2)}</p>
-      <p>Quantity: {数量}</p>
+      <img src={imagePath} alt={name} className="pizza-image" />
+      <h2>{name}</h2>
+      <p>Base Cost: ${price}</p>
+      <p>Total Cost: ${totalPrice.toFixed(2)}</p>
+      <p>Quantity: {quantity}</p>
       <div className="button-group">
-        <button onClick={减少数量}>-</button>
-        <button onClick={增加数量}>+</button>
+        <button onClick={decreaseQuantity}>-</button>
+        <button onClick={increaseQuantity}>+</button>
       </div>
     </div>
   );
